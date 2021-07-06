@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Al-Abramov.github.io/rsschool-cv/cv
