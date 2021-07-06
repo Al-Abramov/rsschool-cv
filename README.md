@@ -1,1 +1,0 @@
-https://Al-Abramov.github.io/rsschool-cv/cv
