@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+h1,
+h2,
+h3,
+ul,
+figure,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  width: 50%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  background-color: darkgrey;
+  padding: 0 10px;
+}
+
+/*left-side*/
+
+.left-side {
+  width: 30%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 15px;
+  background-color: cadetblue;
+  box-shadow: 5px 5px 5px rgba(43, 41, 41, 0.69);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+.avatar__img {
+  width: 90px;
+  height: 90px;
+}
+
+.left-side--section {
+  margin-top: 25px;
+}
+
+.title-wrap {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 22px;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.icon--about {
+  background-image: url("./assets/profile.png");
+}
+
+.icon--contact {
+  background-image: url("./assets/mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon--skills {
+  background-image: url("./assets/gr.png");
+}
+
+.contacts li {
+  margin-bottom: 10px;
+}
+
+.skills__item {
+  margin-top: 10px;
+}
+
+.progress {
+  position: relative;
+  width: 70%;
+  height: 6px;
+  border-radius: 50px;
+  background-color: silver;
+}
+
+.progress::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 6px;
+  border-radius: 50px;
+  background-color: royalblue;
+}
+
+.skills__item--css .progress::before {
+  width: 70%;
+}
+
+.skills__item--js .progress::before {
+  width: 40%;
+}
+
+.skills__item--gulp .progress::before {
+  width: 15%;
+}
+
+.skills__item--git .progress::before {
+  width: 30%;
+}
+
+/*right-side*/
+
+.right-side {
+  width: 69%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.name {
+  width: 80%;
+  height: 100px;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+}
+
+/*footer*/
+
+.footer {
+  width: 50%;
+  height: 10vh;
+  margin: 0 auto;
+  background-color: royalblue;
+}
