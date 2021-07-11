@@ -12,7 +12,8 @@ h2,
 h3,
 ul,
 figure,
-p {
+p,
+body {
   margin: 0;
   padding: 0;
 }
@@ -23,24 +24,25 @@ ul {
 
 .main {
   width: 50%;
-  height: 90vh;
   margin: 0 auto;
   display: flex;
-  background-color: darkgrey;
-  padding: 0 10px;
+  background-image: url('./assets/backgr/photo-1536566482680-fca31930a0bd.jpg');
+  padding: 10px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 /*left-side*/
 
 .left-side {
   width: 30%;
-  height: 96%;
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 15px;
-  background-color: cadetblue;
+  padding: 15px 15px 40px;
+  background-color: #254672;
   box-shadow: 5px 5px 5px rgba(43, 41, 41, 0.69);
+  margin-top: 10px;
 }
 
 .avatar {
@@ -60,52 +62,110 @@ ul {
 }
 
 .left-side--section {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .title-wrap {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .title {
   font-size: 22px;
   align-self: center;
   text-transform: uppercase;
+  color: #ffff;
 }
 
 .subtitle {
   font-size: 16px;
   font-family: 'Roboto';
+  color: rgb(228, 220, 220);
 }
 
 .bold {
   font-weight: 600;
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
-  background-size: cover;
+.contacts .bold {
+  color: #000;
+}
+
+.profile {
+  width: 95%;
+}
+
+.icon-container {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  background-color: #ffff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
 }
 
+.icon-container--right {
+  background-color: #254672;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  
+}
+
 .icon--about {
-  background-image: url("./assets/profile.png");
+  background-image: url("./assets/user-2-48.png");
+}
+
+.icon--courses {
+  background-image: url('./assets/course.png');
 }
 
 .icon--contact {
-  background-image: url("./assets/mobile.png");
+  background-image: url("./assets/smartphone.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .icon--skills {
-  background-image: url("./assets/gr.png");
+  background-image: url("./assets/candidate.png");
+}
+
+.icon--education {
+  background-image: url("./assets/book-16-48.png");
+}
+
+.icon--english {
+  background-image: url("./assets/letter-e-48.png");
+}
+
+.icon--code {
+  background-image: url("./assets/code-48.png");
 }
 
 .contacts li {
   margin-bottom: 10px;
+}
+
+.courses li {
+  margin-bottom: 15px;
+}
+
+.profile .subtitle,
+.contacts ul,
+.skills  ul,
+.courses ul,
+.education p,
+.english p {
+  margin-left: 35px;
+}
+
+.courses ul {
+  list-style: disc;
 }
 
 .skills__item {
@@ -150,25 +210,83 @@ ul {
 .right-side {
   width: 69%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 10px;
 }
 
+.right-side__section--top {
+  margin-top: 35px;
+}
+
 .name {
-  width: 80%;
-  height: 100px;
-  background-color: cadetblue;
+  width: 75%;
+  background-color: #254672;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  justify-self: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgba(43, 41, 41, 0.69);
 }
+
+.name__title {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.name__subtitle {
+  
+}
+
+.right-side__section {
+  width: 75%;
+  background-color: rgba(205, 214, 219, 0.4);
+  box-shadow: 5px 5px 5px rgb(43 41 41 / 70%);
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.title--right {
+  color: #090f1b;
+}
+
+pre {
+  font-size: 17px;
+  font-family: 'Roboto';
+}
+
 
 /*footer*/
 
 .footer {
   width: 50%;
-  height: 10vh;
   margin: 0 auto;
-  background-color: royalblue;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('./assets/backgr/photo-1536566482680-fca31930a0bd.jpg');
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 40px 40px 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer a:hover {
+  color: #254672;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
+}
+
+.logo__icon {
+  width: 100px;
+  height: 50px;
+  background-image: url('./assets/rs_school_js.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
