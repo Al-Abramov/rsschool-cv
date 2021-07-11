@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+h1,
+h2,
+h3,
+ul,
+figure,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  background-image: url('./assets/backgr/photo-1536566482680-fca31930a0bd.jpg');
+  padding: 35px 15px 90px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/*left-side*/
+
+.left-side {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 15px 15px 40px;
+  background-color: #254672;
+  box-shadow: 5px 5px 5px rgba(43, 41, 41, 0.69);
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+.avatar__img {
+  width: 90px;
+  height: 90px;
+}
+
+.left-side--section {
+  margin-top: 30px;
+}
+
+.title-wrap {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 22px;
+  align-self: center;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: rgb(228, 220, 220);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.contacts .bold {
+  color: #000;
+}
+
+.profile {
+  width: 95%;
+}
+
+.icon-container {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  background-color: #ffff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.icon-container--right {
+  background-color: #254672;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  
+}
+
+.icon--about {
+  background-image: url("./assets/user-2-48.png");
+}
+
+.icon--courses {
+  background-image: url('./assets/course.png');
+}
+
+.icon--contact {
+  background-image: url("./assets/smartphone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon--skills {
+  background-image: url("./assets/candidate.png");
+}
+
+.icon--education {
+  background-image: url("./assets/book-16-48.png");
+}
+
+.icon--english {
+  background-image: url("./assets/letter-e-48.png");
+}
+
+.icon--code {
+  background-image: url("./assets/code-48.png");
+}
+
+.contacts li {
+  margin-bottom: 10px;
+}
+
+.courses li {
+  margin-bottom: 15px;
+}
+
+.profile .subtitle,
+.contacts ul,
+.skills  ul,
+.courses ul,
+.education p,
+.english p {
+  margin-left: 35px;
+}
+
+.courses ul {
+  list-style: disc;
+}
+
+.skills__item {
+  margin-top: 10px;
+}
+
+.progress {
+  position: relative;
+  width: 70%;
+  height: 6px;
+  border-radius: 50px;
+  background-color: silver;
+}
+
+.progress::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 6px;
+  border-radius: 50px;
+  background-color: royalblue;
+}
+
+.skills__item--css .progress::before {
+  width: 70%;
+}
+
+.skills__item--js .progress::before {
+  width: 40%;
+}
+
+.skills__item--gulp .progress::before {
+  width: 15%;
+}
+
+.skills__item--git .progress::before {
+  width: 30%;
+}
+
+/*right-side*/
+
+.right-side {
+  width: 69%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.right-side__section--top {
+  margin-top: 35px;
+}
+
+.name {
+  width: 75%;
+  background-color: #254672;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgba(43, 41, 41, 0.69);
+}
+
+.name__title {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.name__subtitle {
+  
+}
+
+.right-side__section {
+  width: 75%;
+  background-color: rgba(205, 214, 219, 0.4);
+  box-shadow: 5px 5px 5px rgb(43 41 41 / 70%);
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.title--right {
+  color: #090f1b;
+}
+
+pre {
+  font-size: 17px;
+  font-family: 'Roboto';
+}
+
+
+/*footer*/
+
+.footer {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('./assets/backgr/photo-1536566482680-fca31930a0bd.jpg');
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 40px 40px 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer a:hover {
+  color: #254672;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
+}
+
+.logo__icon {
+  width: 100px;
+  height: 50px;
+  background-image: url('./assets/rs_school_js.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
